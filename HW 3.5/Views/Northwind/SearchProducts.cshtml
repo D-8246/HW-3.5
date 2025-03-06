@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SearchProducts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container"> 
+            <form action="/Northwind/SearchResults?min=min$max=max">
+                <div class="row mt-5">
+                    <div class="col-md-3 offset-1">
+                        <input name="min" placeholder="Enter min price" class="form-control" />
+                    </div>
+                    <div class="col-md-3">
+                        <input name="max" placeholder="Enter max price" class="form-control" />
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-primary w-100">Search</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+</body>
+</html>
